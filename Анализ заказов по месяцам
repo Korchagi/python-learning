@@ -1,0 +1,19 @@
+#входные данные
+orders = [112, 85, 77, 105, 96]
+
+#добавленные данные
+orders.append (123)
+orders[1]=90
+
+#расчеты
+avg_orders=sum(orders)/len(orders)
+orders.sort(reverse=True)
+
+#вывод
+print("Первый месяц: ", orders [0])
+print("Последний месяц: ", orders [-1])
+print("Есть ли в списке 105: ", 105 in orders)
+print("Список по убыванию: ", orders)
+print("Общее количество заказов: ", len(orders))
+print( "Среднее количество заказов за месяц: ", round(avg_orders, 1))
+print( "Обновленный список заказов: ", orders)
