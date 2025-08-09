@@ -1,0 +1,19 @@
+#входные данные
+client = {
+    "name":"Иван",
+    "city":"Казань",
+    "orders":85,
+    "revenue":1.28
+}
+#добавленные данные
+client ["orders"]=90
+client ["is_active"]=True
+
+#вывод
+print("Имя клиента:", client["name"])
+print ( "Город клиента:", client["city"])
+print("Количесво заказов:", client["orders"])
+print("Добавить новый ключ is_active:", client ["is_active"])
+print("Есть ли ключ city:", "city" in client)
+print("Сколько полей в словаре:", len(client))
+print("Весь словарь:", client)
