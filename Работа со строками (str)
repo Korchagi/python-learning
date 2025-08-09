@@ -1,0 +1,11 @@
+#данные
+first_name = "Ольга"
+last_name = "Кузнецова"
+company_name = "ТехноПлюс"
+
+#расчет
+full_name = first_name + " " + last_name
+
+#вывод
+print ("Клиент:", full_name)
+print ("Компания:", company_name)
