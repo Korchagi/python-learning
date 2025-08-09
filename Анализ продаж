@@ -1,5 +1,5 @@
 #входные данные
-product_name = "Телевизор Pro Haer"
+product_name = "Телевизор Pro Haier"
 unit_price = 19999.25
 sold = 72
 returned = 11
