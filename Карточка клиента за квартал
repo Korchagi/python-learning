@@ -1,0 +1,23 @@
+#вводные данные по клиенту
+first_name = "Мария"
+last_name = "Иванова"
+company_name = "ТехноГрад"
+# вводные данные по заказам
+jan_orders = 112
+feb_orders = 85
+mar_orders = 77
+avg_check = 3333.3
+is_active = True
+
+#расчеты
+full_name = first_name + " " + last_name
+total_orders = jan_orders + feb_orders + mar_orders
+total_revenue = total_orders * avg_check
+rounded_revenue = round(total_revenue, 2)
+
+#вывод
+print ( "Клиент:", full_name)
+print ( "Компания:", company_name)
+print ( "Итого заказов:", total_orders)
+print ( "Выручка за квартал, руб.:", rounded_revenue)
+print ( "Активен:", is_active)
