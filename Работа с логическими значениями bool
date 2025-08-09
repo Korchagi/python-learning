@@ -1,0 +1,9 @@
+#вводные данные
+client_name = "Наталья"
+has_debt = False
+is_active = False
+
+#вывод
+print ("Клиент:", client_name)
+print ("Есть долг:", has_debt)
+print ( "Активен:", is_active)
