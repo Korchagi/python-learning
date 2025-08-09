@@ -1,0 +1,18 @@
+#входные данные
+cart_total = 2300
+is_vip = False
+has_coupon = True
+coupon_discount = 0.10
+#расчеты
+
+#вывод
+print("Сумма корзины:", cart_total)
+print("VIP:", is_vip)
+print("Наличие купона:", has_coupon)
+print("Размер скидки:", coupon_discount)
+if is_vip and cart_total >= 30000:
+    print("Бесплатная доставка")
+elif cart_total >= 20000 or (has_coupon and coupon_discount >= 0.10):
+    print("Скидка применена")
+else:
+    print("Без скидок и доставки")
