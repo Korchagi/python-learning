@@ -1,0 +1,484 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "7d9bed31-00a4-48fb-be0d-bc685fbb70fd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Привет, Аналитик\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = 'Аналитик'\n",
+    "print ('Привет,', name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "f8c9f50b-66ec-4f31-99a1-55c803ee7f17",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Общее количество клиентов: 308\n"
+     ]
+    }
+   ],
+   "source": [
+    "#данные о количестве клиентов за 3 месяца\n",
+    "moscow_clients=128\n",
+    "spb_clients=97\n",
+    "ekb_clients=83\n",
+    "total_clients=moscow_clients+spb_clients+ekb_clients\n",
+    "print (\"Общее количество клиентов:\", total_clients)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "2d51725f-d597-48a7-a75d-f0cf32dac1e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Общий доход за квартал: 5.3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#данные о доходе за три месяца\n",
+    "january_income=1.35\n",
+    "february_income=2.10\n",
+    "march_income=1.85\n",
+    "\n",
+    "#расчет\n",
+    "total_income=january_income+february_income+march_income\n",
+    "\n",
+    "#вывод\n",
+    "print (\"Общий доход за квартал:\", (round(total_income, 1)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "72e5cc48-ee77-4dca-988e-e72882d5f0c5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Клиент: Ольга Кузнецова\n",
+      "Компания: ТехноПлюс\n"
+     ]
+    }
+   ],
+   "source": [
+    "#данные\n",
+    "first_name = \"Ольга\"\n",
+    "last_name = \"Кузнецова\"\n",
+    "company_name = \"ТехноПлюс\"\n",
+    "\n",
+    "#расчет\n",
+    "full_name = first_name + \" \" + last_name\n",
+    "\n",
+    "#вывод\n",
+    "print (\"Клиент:\", full_name)\n",
+    "print (\"Компания:\", company_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "63c7b1be-e21b-403d-88b3-6035393b08b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Клиент: Наталья\n",
+      "Есть долг: False\n",
+      "Активен: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "#вводные данные\n",
+    "client_name = \"Наталья\"\n",
+    "has_debt = False\n",
+    "is_active = False\n",
+    "\n",
+    "#вывод\n",
+    "print (\"Клиент:\", client_name)\n",
+    "print (\"Есть долг:\", has_debt)\n",
+    "print ( \"Активен:\", is_active)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "f27cd7b4-3204-48fa-92f3-2abb57b39f92",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Клиент: Мария Иванова\n",
+      "Компания: ТехноГрад\n",
+      "Итого заказов: 274\n",
+      "Выручка за квартал, руб.: 913324.2\n",
+      "Активен: True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#вводные данные по клиенту\n",
+    "first_name = \"Мария\"\n",
+    "last_name = \"Иванова\"\n",
+    "company_name = \"ТехноГрад\"\n",
+    "# вводные данные по заказам\n",
+    "jan_orders = 112\n",
+    "feb_orders = 85\n",
+    "mar_orders = 77\n",
+    "avg_check = 3333.3\n",
+    "is_active = True\n",
+    "\n",
+    "#расчеты\n",
+    "full_name = first_name + \" \" + last_name\n",
+    "total_orders = jan_orders + feb_orders + mar_orders\n",
+    "total_revenue = total_orders * avg_check\n",
+    "rounded_revenue = round(total_revenue, 2)\n",
+    "\n",
+    "#вывод\n",
+    "print ( \"Клиент:\", full_name)\n",
+    "print ( \"Компания:\", company_name)\n",
+    "print ( \"Итого заказов:\", total_orders)\n",
+    "print ( \"Выручка за квартал, руб.:\", rounded_revenue)\n",
+    "print ( \"Активен:\", is_active) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "275408dd-6af6-4499-ad83-42ae45174382",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Количество месяцев в списке: 4\n",
+      "Общая сумма заказов: 379\n",
+      "Среднее количество заказзов за месяц: 94.8\n",
+      "Обновленный список заказов: [112, 85, 77, 105]\n"
+     ]
+    }
+   ],
+   "source": [
+    "del print\n",
+    "#входные данные\n",
+    "orders = [112, 85, 77]\n",
+    "\n",
+    "#новые данные\n",
+    "orders.append (105)\n",
+    "\n",
+    "#расчеты\n",
+    "avg_orders = sum(orders)/len(orders)\n",
+    "\n",
+    "#вывод\n",
+    "print(\"Количество месяцев в списке:\", len(orders))\n",
+    "print(\"Общая сумма заказов:\", sum(orders))\n",
+    "print(\"Среднее количество заказзов за месяц:\", round(avg_orders, 1))\n",
+    "print(\"Обновленный список заказов:\", orders)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "14fb0b57-5e2d-4d07-ba03-43425d5ee04c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Первый месяц:  123\n",
+      "Последний месяц:  77\n",
+      "Есть ли в списке 105:  True\n",
+      "Список по убыванию:  [123, 112, 105, 96, 90, 77]\n",
+      "Общее количество заказов:  6\n",
+      "Среднее количество заказов за месяц:  100.5\n",
+      "Обновленный список заказов:  [123, 112, 105, 96, 90, 77]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#входные данные\n",
+    "orders = [112, 85, 77, 105, 96]\n",
+    "\n",
+    "#добавленные данные\n",
+    "orders.append (123)\n",
+    "orders[1]=90\n",
+    "\n",
+    "#расчеты\n",
+    "avg_orders=sum(orders)/len(orders)\n",
+    "orders.sort(reverse=True)\n",
+    "\n",
+    "#вывод\n",
+    "print(\"Первый месяц: \", orders [0])\n",
+    "print(\"Последний месяц: \", orders [-1])\n",
+    "print(\"Есть ли в списке 105: \", 105 in orders)\n",
+    "print(\"Список по убыванию: \", orders)\n",
+    "print(\"Общее количество заказов: \", len(orders))\n",
+    "print( \"Среднее количество заказов за месяц: \", round(avg_orders, 1))\n",
+    "print( \"Обновленный список заказов: \", orders)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "73e79874-2571-43e6-9d55-f7e05b64bee8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Первый месяц: Январь\n",
+      "Последний месяц: Март\n",
+      "Есть ли в кортеже месяц Апрель: False\n",
+      "Количество месяцев в кортеже: 3\n",
+      "Распаковка кортежа в отдельные переменные: Январь Февраль Март\n"
+     ]
+    }
+   ],
+   "source": [
+    "#входные данные\n",
+    "month = (\"Январь\", \"Февраль\", \"Март\")\n",
+    "\n",
+    "#расчеты\n",
+    "m1, m2, m3 = (month)\n",
+    "\n",
+    "#вывод\n",
+    "print(\"Первый месяц:\", month [0])\n",
+    "print(\"Последний месяц:\", month [-1])\n",
+    "print(\"Есть ли в кортеже месяц Апрель:\", \"Апрель\" in month)\n",
+    "print(\"Количество месяцев в кортеже:\", len(month))\n",
+    "print(\"Распаковка кортежа в отдельные переменные:\", m1, m2, m3)\n",
+    "      "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "b96bf044-0604-43d7-9841-be84cc5548fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Имя клиента: Иван\n",
+      "Город клиента: Казань\n",
+      "Количесво заказов: 90\n",
+      "Добавить новый ключ is_active: True\n",
+      "Есть ли ключ city: True\n",
+      "Сколько полей в словаре: 5\n",
+      "Весь словарь: {'name': 'Иван', 'city': 'Казань', 'orders': 90, 'revenue': 1.28, 'is_active': True}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#входные данные\n",
+    "client = {\n",
+    "    \"name\":\"Иван\",\n",
+    "    \"city\":\"Казань\",\n",
+    "    \"orders\":85,\n",
+    "    \"revenue\":1.28\n",
+    "}\n",
+    "#добавленные данные\n",
+    "client [\"orders\"]=90\n",
+    "client [\"is_active\"]=True\n",
+    "\n",
+    "#вывод\n",
+    "print(\"Имя клиента:\", client[\"name\"])\n",
+    "print ( \"Город клиента:\", client[\"city\"])\n",
+    "print(\"Количесво заказов:\", client[\"orders\"])\n",
+    "print(\"Добавить новый ключ is_active:\", client [\"is_active\"])\n",
+    "print(\"Есть ли ключ city:\", \"city\" in client)\n",
+    "print(\"Сколько полей в словаре:\", len(client))\n",
+    "print(\"Весь словарь:\", client)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "16a14788-347d-4e94-8f5c-780bb6a02829",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Название: Семечки\n",
+      "Цена: 12.0\n",
+      "Остаток: 99\n",
+      "Стоимость остатка: 1188.0\n",
+      "Акстивен: True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#входные данные\n",
+    "product_name = \"Семечки\"\n",
+    "unit_price = 12.0\n",
+    "in_stock = 99\n",
+    "is_active = True\n",
+    "\n",
+    "#расчеты\n",
+    "stock_value = in_stock*unit_price\n",
+    "\n",
+    "#вывод\n",
+    "print(\"Название:\", product_name)\n",
+    "print(\"Цена:\", unit_price)\n",
+    "print(\"Остаток:\", in_stock)\n",
+    "print(\"Стоимость остатка:\", stock_value)\n",
+    "print(\"Акстивен:\", is_active)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "b4077c92-97e0-48b0-a427-8d89ec73bace",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Название курса: Питон для бизнес-аналитиков\n",
+      "Цена за 1 место: 5999.9\n",
+      "Количество проданных мест: 7\n",
+      "Количество возвращенных билетов: 2\n",
+      "Курс активен или нет: True\n",
+      "Всего билетов: 5\n",
+      "Выручка: 29999.5\n"
+     ]
+    }
+   ],
+   "source": [
+    "#входные данные\n",
+    "course_name = \"Питон для бизнес-аналитиков\"\n",
+    "unit_price = 5999.9\n",
+    "sell_tickets = 7\n",
+    "back_tickets = 2\n",
+    "is_active = True\n",
+    "#расчеты\n",
+    "total_tickets = sell_tickets-back_tickets\n",
+    "revenue = total_tickets*unit_price\n",
+    "#вывод\n",
+    "print(\"Название курса:\", course_name)\n",
+    "print(\"Цена за 1 место:\", unit_price)\n",
+    "print(\"Количество проданных мест:\", sell_tickets)\n",
+    "print(\"Количество возвращенных билетов:\", back_tickets)\n",
+    "print(\"Курс активен или нет:\", is_active)\n",
+    "print(\"Всего билетов:\", total_tickets)\n",
+    "print(\"Выручка:\", revenue)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "9fa10295-2bdd-43f3-b264-e95dd369338b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Название товара: Умная колонка\n",
+      "Цена за штуку: 3500\n",
+      "Купили: 18\n",
+      "Вернули: 3\n",
+      "Скидка: 0.15\n",
+      "Общее количество проданных товаров: 15\n",
+      "Выручка со скидкой: 44625.0\n",
+      "Выручка без скидки: 52500\n",
+      "Продажи можно улучшить.\n",
+      "Проверить встречается ли слово колонка в названии товара: True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Задача: анализ продаж интернет-магазина\n",
+    "#входные данные\n",
+    "name = \"Умная колонка\"\n",
+    "price = 3500\n",
+    "sold = 18\n",
+    "returned = 3\n",
+    "discount = 0.15\n",
+    "#расчеты\n",
+    "total_sold = sold-returned\n",
+    "revenue_with_discount = total_sold*price*(1-discount)\n",
+    "revenue = total_sold*price\n",
+    "\n",
+    "#вывод\n",
+    "print(\"Название товара:\", name)\n",
+    "print(\"Цена за штуку:\", price)\n",
+    "print(\"Купили:\", sold)\n",
+    "print(\"Вернули:\", returned)\n",
+    "print(\"Скидка:\", discount)\n",
+    "print(\"Общее количество проданных товаров:\", total_sold)\n",
+    "print(\"Выручка со скидкой:\", revenue_with_discount)\n",
+    "print(\"Выручка без скидки:\", revenue)\n",
+    "if revenue_with_discount > 50000:\n",
+    "    print(\"Отличные продажи!\")\n",
+    "else:\n",
+    "    print (\"Продажи можно улучшить.\")\n",
+    "print(\"Проверить встречается ли слово колонка в названии товара:\", \"колонка\" in name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7e7c31fd-5bf3-4887-a7e1-e14b645b759f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
