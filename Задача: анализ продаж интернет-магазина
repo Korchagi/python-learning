@@ -1,1 +1,25 @@
+#входные данные
+name = "Умная колонка"
+price = 3500
+sold = 18
+returned = 3
+discount = 0.15
+#расчеты
+total_sold = sold-returned
+revenue_with_discount = total_sold*price*(1-discount)
+revenue = total_sold*price
 
+#вывод
+print("Название товара:", name)
+print("Цена за штуку:", price)
+print("Купили:", sold)
+print("Вернули:", returned)
+print("Скидка:", discount)
+print("Общее количество проданных товаров:", total_sold)
+print("Выручка со скидкой:", revenue_with_discount)
+print("Выручка без скидки:", revenue)
+if revenue_with_discount > 50000:
+    print("Отличные продажи!")
+else:
+    print ("Продажи можно улучшить.")
+print("Проверить встречается ли слово колонка в названии товара:", "колонка" in name)
