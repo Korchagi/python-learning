@@ -1,0 +1,10 @@
+#данные о доходе за три месяца
+january_income=1.35
+february_income=2.10
+march_income=1.85
+
+#расчет
+total_income=january_income+february_income+march_income
+
+#вывод
+print ("Общий доход за квартал:", (round(total_income, 1)))
