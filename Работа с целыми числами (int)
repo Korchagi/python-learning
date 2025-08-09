@@ -1,0 +1,6 @@
+#данные о количестве клиентов за 3 месяца
+moscow_clients=128
+spb_clients=97
+ekb_clients=83
+total_clients=moscow_clients+spb_clients+ekb_clients
+print ("Общее количество клиентов:", total_clients)
