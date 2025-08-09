@@ -1,0 +1,24 @@
+#входные данные
+product_name = "Телевизор Pro Haer"
+unit_price = 19999.25
+sold = 72
+returned = 11
+discount = 0.15
+#расчеты
+total_sold = sold-returned
+revenue_without_discount = total_sold*unit_price
+revenue_with_discount = total_sold*unit_price* (1-discount)
+#вывод
+print("Название товара:", product_name)
+print("Цена за единицу:", unit_price)
+print("Количество проданных единиц:", total_sold)
+print("Количество возвратов:", returned)
+print("Скидка в процентах:", discount)
+print("Чистое количество проданных единиц:", total_sold)
+print("Выручка без скидки:", round(revenue_without_discount, 2))
+print("Выручка со скидкой:", round(revenue_with_discount, 2))
+if revenue_with_discount >= 50000:
+    print ("Отличные продажи!")
+else:
+    print ("Продажи можно улучшить")
+    print ("Проверить встречается ли в названии товара слов Pro:", "Pro" in product_name)
