@@ -1,0 +1,15 @@
+del print
+#входные данные
+orders = [112, 85, 77]
+
+#новые данные
+orders.append (105)
+
+#расчеты
+avg_orders = sum(orders)/len(orders)
+
+#вывод
+print("Количество месяцев в списке:", len(orders))
+print("Общая сумма заказов:", sum(orders))
+print("Среднее количество заказзов за месяц:", round(avg_orders, 1))
+print("Обновленный список заказов:", orders)
