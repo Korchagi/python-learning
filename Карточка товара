@@ -1,0 +1,15 @@
+#входные данные
+product_name = "Семечки"
+unit_price = 12.0
+in_stock = 99
+is_active = True
+
+#расчеты
+stock_value = in_stock*unit_price
+
+#вывод
+print("Название:", product_name)
+print("Цена:", unit_price)
+print("Остаток:", in_stock)
+print("Стоимость остатка:", stock_value)
+print("Акстивен:", is_active)
