@@ -1,0 +1,17 @@
+#входные данные
+course_name = "Питон для бизнес-аналитиков"
+unit_price = 5999.9
+sell_tickets = 7
+back_tickets = 2
+is_active = True
+#расчеты
+total_tickets = sell_tickets-back_tickets
+revenue = total_tickets*unit_price
+#вывод
+print("Название курса:", course_name)
+print("Цена за 1 место:", unit_price)
+print("Количество проданных мест:", sell_tickets)
+print("Количество возвращенных билетов:", back_tickets)
+print("Курс активен или нет:", is_active)
+print("Всего билетов:", total_tickets)
+print("Выручка:", revenue)
