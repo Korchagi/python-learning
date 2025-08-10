@@ -1,0 +1,36 @@
+#входные данные
+cart_total = 22000
+has_coupon = True
+coupon_discount = 0.1
+product_name = "Видеорегистратор Miracle Pro"
+MAX_DISCOUNT = 0.2
+L1, L2, L3 = 0.05, 0.10, 0.15
+TARGET = 30000
+#расчеты
+if 10000 <= cart_total <= 20000:
+    base_discount = 0.05
+elif 20001 <= cart_total <= 50000:
+    base_discount = 0.10
+elif cart_total > 50000:
+    base_discount = 0.15
+else:
+    base_discount = 0
+    
+final_discount = base_discount
+if has_coupon and coupon_discount >= 0.05:
+    final_discount = max(coupon_discount, final_discount)
+if "Pro" in product_name:
+    final_discount += 0.02
+if final_discount > 0.20:
+    final_discount = 0.20
+total_price = cart_total * (1 - final_discount)
+#вывод
+print("Сумма корзины:", cart_total)
+print("Базовая скидка:", base_discount)
+print("Купон и его размер:", coupon_discount)
+print("Финальная скидка:",  f"{round(final_discount*100, 2)}%")
+print("Итоговая цена:", round(total_price, 2))
+if total_price >= 30000:
+    print("Заказ крупный")
+else:
+    print("Заказ обычный")
