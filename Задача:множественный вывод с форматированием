@@ -1,0 +1,8 @@
+#входные данные
+order_ids = [101, 102, 103, 104]
+amounts   = [5200, 3100, 8900, 4600]
+statuses  = ["оплачен", "ожидает", "оплачен", "отменён"]
+
+#вывод
+for i in range(len(order_ids)):
+    print(f"Заказ №{order_ids[i]} - {amounts[i]} - {statuses[i]}")
