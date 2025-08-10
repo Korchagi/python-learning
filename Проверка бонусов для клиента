@@ -1,0 +1,22 @@
+#входные данные
+purchase_amount = 18500
+is_vip = False
+
+#расчет бонуса
+if is_vip and purchase_amount > 20000:
+    bonus = 0.07
+elif purchase_amount > 15000:
+    bonus = 0.05
+else:
+    bonus = 0.02
+#расчет бесплатной доставки
+if purchase_amount > 10000:
+    has_delivery = True
+else:
+    has_delivery = False
+#вывод
+print("Сумма покупки:", purchase_amount)
+print("Статус клиента:", is_vip)
+print("Размер бонуса в %:", f"{bonus*100}%")
+print("Размер бонуса в рублях:", purchase_amount*bonus)
+print("Бесплатная доставка:", "Да" if has_delivery else "Нет")
