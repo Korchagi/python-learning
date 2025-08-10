@@ -1,0 +1,15 @@
+#входные данные
+cart_total = 15000
+#расчеты
+if 10000 <= cart_total <= 20000:
+    discount = 0.05
+elif 20001 <= cart_total <= 50000:
+    discount = 0.1
+elif cart_total > 50000:
+    dicount = 0.15
+else:
+    discount = 0
+            
+#вывод
+print ("Сумма покупки:", cart_total)
+print ("Скидка:", discount)
