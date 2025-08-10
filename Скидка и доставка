@@ -1,0 +1,23 @@
+#входные данные
+order_total = 9000
+has_coupon = True
+
+#расчеты скидки
+discount = 0
+if order_total >= 20000 or has_coupon:
+    discount = 0.1
+#расчет суммы после скидки
+order_final = order_total* (1-discount)
+#расчеты стоимости доставки
+if order_final > 15000:
+    delivery_cost = 0
+else:
+    delivery_cost = 500
+#расчет итоговой оплаты
+final_cost = order_final+delivery_cost
+#вывод
+print("Сумма заказа до скидки:", order_total)
+print("Скидка в рублях:", order_total*discount)
+print("Стоимость после скидки:", order_final)
+print("Стоимость доставки:", delivery_cost)
+print("Сумма к оплате:", final_cost)
