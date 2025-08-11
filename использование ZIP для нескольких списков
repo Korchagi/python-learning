@@ -1,4 +1,4 @@
-#Задача: использование ZIP для нескольких списков
+#Задача1: использование ZIP для нескольких списков
 #входные данные - продажи двух филиалов по дням
 branch_a = [1200, 1500, 1100, 900, 1300, 0, 800]
 branch_b = [800, 700, 950, 1000, 1200, 500, 400]
@@ -12,3 +12,37 @@ for day, a, b in zip(days, branch_a, branch_b):
     print (f"{day}:{s}")
 #вывод
 print (f"Итого: {weekly_total}")
+
+Задача 2
+#входные данные
+products   = ["Ноутбук", "Смартфон", "Планшет", "Наушники"]
+sold_shop1 = [5, 10, 3, 8]
+sold_shop2 = [4, 8, 5, 6]
+prices     = [50000, 30000, 20000, 5000]
+
+#расчеты
+total_price = 0
+for product, shop1, shop2, price in zip(products, sold_shop1, sold_shop2, prices):
+    s=shop1+shop2
+    revenue=s*
+    total_price+=revenue
+    print(f"{product}: {s} шт. - {price} р.")
+#вывод
+print(f"Общая выручка: {total_price}")
+
+Задача 3:
+#входные данные
+days       = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
+visitors_a = [120, 150, 100, 90, 130, 50, 80]   # клиенты филиала А
+visitors_b = [80, 70, 95, 100, 120, 50, 40]     # клиенты филиала B
+avg_check  = [550, 600, 500, 450, 700, 400, 300] # средний чек по дням
+#расчеты
+total_revenue=0
+for day, a, b, check in zip(days, visitors_a, visitors_b, avg_check): #цикл+zip
+    amount_visitors=a+b #количество посетителей двух филиалов в день
+    day_revenue=amount_visitors*check #расчет дохода за день с двух филиалов
+    total_revenue+=day_revenue #расчет дохода за неделю с двух филиалов
+    print(f"{day}: {amount_visitors} клиентов - {day_revenue} р.")
+
+#вывод данных общего дохода за неделю
+print(f"Общий доход за неделю: {total_revenue}р.")
