@@ -1,0 +1,16 @@
+#Задача:выборочное повышение цен
+#входные данные
+products = ["Молоко", "Хлеб", "Сыр", "Яблоки", "Кофе"]
+prices   = [65, 40, 520, 100, 350]
+
+#расчет
+for i in range(len(products)):
+    old_price=prices[i]
+    if old_price < 100:
+        new_price =old_price*1.12
+    else:
+        new_price=old_price*1.05
+        
+    new_price=round(new_price,2)
+    prices [i] = new_price
+    print(f"{products[i]}: {old_price:.2f} руб. - {new_price:.2f} руб.")
