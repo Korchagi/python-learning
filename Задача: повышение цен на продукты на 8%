@@ -1,0 +1,10 @@
+#Задача: повышение цен на продукты на 8%
+#входные данные
+products = ["Молоко", "Хлеб", "Сыр", "Яблоки", "Кофе"]
+prices   = [65, 40, 520, 100, 350]
+#расчет
+for i in range(len(products)):
+    old_price= prices[i]
+    new_price=old_price*1.08
+    new_price=round(new_price, 2)
+    prices [i] = new_price
