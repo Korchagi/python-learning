@@ -1,0 +1,10 @@
+#Задача: увеличение зарплат на 15%
+#входные данные
+salaries = [40000, 55000, 30000, 47000, 52000]
+#расчеты
+for i in range(len(salaries)):
+    old_salary = salaries[i]  #положили в старую зарплату значение счетчика i
+    new_salary = old_salary*1.15 #прибавили 15% к старой зарплате
+    new_salary = round(new_salary) #округляем до целого числа
+    salaries [i] = new_salary #обновляем цену в списке
+    print(f"{old_salary} - {new_salary}")
